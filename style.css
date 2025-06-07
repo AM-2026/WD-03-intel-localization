@@ -144,21 +144,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Hide overlay */
-  transition: opacity 0.3s; /* Smooth fade in/out */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth fade in/out */
   border-radius: 4px;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em; /* Slightly smaller font size for better fit */
   pointer-events: none; /* Prevent accidental hover issues */
   z-index: 3; /* Make sure overlay is above image and overcast */
+  overflow: hidden; /* Prevent scrolling */
 }
 
 /* Show overlay on hover */
 .img-overlay-container:hover .overlay {
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 1; /* Fully visible on hover */
+  pointer-events: auto; /* Enable interaction */
   z-index: 4;
 }
 
