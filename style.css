@@ -199,24 +199,69 @@ body {
   /* For beginners: this puts the instruction at the left where the timeline starts */
 }
 
-/* Responsive styles for small screens */
+/* Adjust margin for the three rows section */
+.container.vh-100 {
+  margin-top: 0.5rem; /* Reduce the top margin further */
+  position: relative; /* Ensure proper positioning */
+}
+
+/* Style for the Learn More button */
+.learn-more-btn {
+  display: inline-block;
+  background-color: #888; /* Gray background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  font-size: 1em; /* Font size */
+  font-family: 'Rubik', Arial, sans-serif; /* Use Rubik font */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove underline */
+  margin-top: 10px; /* Add space above the button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+.learn-more-btn:hover {
+  background-color: #666; /* Darker gray on hover */
+}
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(to right, #444, #222); /* Gradient from dark gray to darker gray */
+  color: #fff; /* White text for contrast */
+  text-align: center; /* Center content */
+  padding: 60px; /* Increase padding to make the footer taller */
+
+}
+
+/* Style for the Subscribe button */
+.footer .subscribe-btn {
+  display: inline-block;
+  background-color: #555; /* Dark gray background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  font-size: 1em; /* Font size */
+  font-family: 'Rubik', Arial, sans-serif; /* Use Rubik font */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove underline */
+  margin-top: 10px; /* Add space above the button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the Subscribe button */
+.footer .subscribe-btn:hover {
+  background-color: #333; /* Darker gray on hover */
+}
+
+/* Responsive adjustments for small screens */
 @media (max-width: 700px) {
-  .container {
-    flex-direction: column;    /* Stack cards vertically */
-    width: 98vw;               /* Make container almost full screen width */
-    align-items: center;       /* Center cards in the column */
-    gap: 16px;                 /* More space between stacked cards */
-    overflow-x: visible;       /* No horizontal scroll needed */
-  }
-  .container > div {
-    width: 95vw;               /* Make cards wider on small screens */
-    min-width: 0;
-    height: auto;              /* Let card height grow with content */
-  }
-  .img-overlay-container,
-  .img-overlay-container img {
-    width: 100%;
-    height: 180px;
-    max-width: 100%;    /* Prevent overflow on small screens */
+  .learn-more-btn {
+    width: 100%; /* Make button full width on small screens */
+    text-align: center; /* Center text */
   }
 }
